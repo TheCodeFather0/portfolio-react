@@ -12,7 +12,7 @@ const Banner = () => {
             Hi, <br /> I'm <span className="text-primary">{firstName}</span> <br /> {department}
           </h2>
 
-          <a href="#contact">contact</a>
+          <a href="#contact" className={styles.contact}>contact</a>
         </div>
         <div className={styles.right}>
           <svg
