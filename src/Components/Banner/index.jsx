@@ -9,7 +9,7 @@ const Banner = () => {
       <div className={styles.banner}>
         <div className={styles.left}>
           <h2 className={styles.title}>
-            Hi, <br /> I'm <span>{firstName}</span> <br /> {department}
+            Hi, <br /> I'm <span className="text-primary">{firstName}</span> <br /> {department}
           </h2>
 
           <a href="#contact">contact</a>
