@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import Header from "./Components/Header";
+import Banner from "./Components/Banner";
+import ScrollSpy from "react-ui-scrollspy";
 
 const App = () => {
   return (
-    <div>
-      <h1>Portfolio</h1>
-    </div>
-  )
-}
+    <ScrollSpy>
+      <Header />
+      <Banner />
+    </ScrollSpy>
+  );
+};
 
-export default App
+export default App;

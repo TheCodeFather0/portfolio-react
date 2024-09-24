@@ -1,0 +1,23 @@
+@font-face {
+    font-family: poppins;
+    src: url('../Fonts/Poppins/Poppins-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: poppins;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.active-scroll-spy {
+    border-bottom: 3px solid #3e6ff4;
+}

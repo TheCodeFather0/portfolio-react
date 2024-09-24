@@ -1,0 +1,25 @@
+.header {
+    border-bottom: 2px solid #ddd;  
+    box-shadow: 0 2px 5px #ddd;
+    position: sticky;
+    top: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.links {
+    text-decoration: none;
+    color: #212121;
+}
+
