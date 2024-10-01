@@ -1,18 +1,32 @@
 import React from "react";
 import styles from "./style.module.css";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import usePersonalData from "../../Hooks/usePersonalData";
 
 const Banner = () => {
-  const { firstName, department } = usePersonalData();
+  const { firstName, department, socialMedia } = usePersonalData();
   return (
     <div className="container" id="home">
       <div className={styles.banner}>
         <div className={styles.left}>
           <h2 className={styles.title}>
-            Hi, <br /> I'm <span className="text-primary">{firstName}</span> <br /> {department}
+            Hi, <br /> I'm <span className="text-primary">{firstName}</span>{" "}
+            <br /> {department}
           </h2>
 
-          <a href="#contact" className={styles.contact}>contact</a>
+          <a href="#contact" className={styles.contact}>
+            contact
+          </a>
+
+          <div className={styles.socialMedia}>
+            <a href={socialMedia[0].link} target="_blank">
+              <FaLinkedinIn />
+            </a>
+            <a href={socialMedia[1].link} target="_blank">
+              <FaGithub />
+            </a>
+          </div>
         </div>
         <div className={styles.right}>
           <svg
