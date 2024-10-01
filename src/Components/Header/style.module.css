@@ -1,25 +1,76 @@
 .header {
-    border-bottom: 2px solid #ddd;  
-    box-shadow: 0 2px 5px #ddd;
-    position: sticky;
-    top: 0;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 5px #ddd;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .links {
-    text-decoration: none;
-    color: #212121;
+  text-decoration: none;
+  color: #212121;
 }
 
+.bars {
+  display: none;
+}
+
+.hideMenu,
+.mobileMenu {
+  background-color: #3e6ff4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.5s;
+  a {
+    font-size: 25px;
+    color: #fff;
+  }
+}
+
+.hideMenu {
+  right: -100%;
+  width: 0;
+  overflow: hidden;
+}
+
+.closeMobileMenu {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .bars {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+  }
+}
