@@ -1,27 +1,42 @@
 @font-face {
-    font-family: poppins;
-    src: url('../Fonts/Poppins/Poppins-Regular.ttf');
+  font-family: poppins;
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body {
-    font-family: poppins;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
+html,
+body {
+  font-family: poppins;
 }
 
 .active-scroll-spy {
-    border-bottom: 3px solid #3e6ff4;
+  border-bottom: 3px solid #3e6ff4;
 }
 
 .text-primary {
-    color: #3e6ff4;
+  color: #3e6ff4;
+}
+
+.sectionTitle {
+  color: #3e6ff4;
+  margin: 70px auto;
+  width: fit-content;
+  border-bottom: 2px solid;
+  font-size: 35px;
+}
+
+.userImage {
+  width: 100%;
+  border-radius: 20px;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
 }
