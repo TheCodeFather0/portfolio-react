@@ -35,6 +35,8 @@ body {
   border-radius: 20px;
   filter: grayscale(100%);
   transition: all 0.5s;
+  position: relative;
+  z-index: -1;
 
   &:hover {
     filter: grayscale(0%);
